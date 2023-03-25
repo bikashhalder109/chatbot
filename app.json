@@ -12,6 +12,15 @@
             "description": "Input Owner Username here ( Without @)",
             "required": true
         },
+        "OWNER_ID": {
+            "description": "Your Id Here! For Eg: 1439222689.",
+            "required": true,
+            "value": "1439222689"
+        },
+        "BOT_NAME": {
+            "description": "Simple Bot-name. Do not use Modified Text..",
+            "required": true
+        },        
         "SUPPORT_GRP": {
             "description": "Input support group username here ( Without @)",
             "required": true
@@ -24,10 +33,46 @@
             "description": "Input Bot USERNAME here ( Without @)",
             "required": true
         },  
-        "BOT_IMAGE": {
-            "description": "Input Bot start pic link here",
+        "START_IMG1": {
+            "description": "Start Image For Bot.",
             "required": true
-        },       
+        },
+        "START_IMG2": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG3": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG4": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG5": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG6": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG7": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG8": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG9": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
+        "START_IMG10": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },      
         "MONGO_URL": {
             "description": "Input mongo db url here",
             "required": true
