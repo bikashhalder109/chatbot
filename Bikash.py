@@ -1,4 +1,4 @@
-## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
+    ## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
 
 import requests
 import random
@@ -44,7 +44,7 @@ bot = Client(
 )
 
 mongo = MongoCli(MONGO_URL)
-db = mongo.bikash
+db = mongo.Bgtowner
 chatsdb = db.chatsdb
 usersdb = db.users
 
@@ -159,7 +159,7 @@ HELP_READ = f"""
 
 🥀 [𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/{UPDATE_CHNL}) & [𝐆𝐫𝐨𝐮𝐩](https://t.me/{SUPPORT_GRP}) 🥀
 **──────────────**
-<b>|| [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})||</b>
+ [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
 """
 BACK = [
      [
@@ -210,7 +210,7 @@ TOOLS_DATA_READ = f"""
 **──────────────**
 ** 𝐔𝐬𝐞 `/ping` 𝐅𝐨𝐫 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐏𝐢𝐧𝐠 𝐎𝐟 {BOT_NAME}**
 **──────────────**
-<b>||[𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})||</b>
+[𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
 """
 
 async def is_served_user(user_id: int) -> bool:
