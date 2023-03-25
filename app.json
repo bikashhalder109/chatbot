@@ -1,49 +1,51 @@
 {
-    "name": "v chat bot 💖",   
-    "logo": "https://te.legra.ph/file/e30f5a295dd0ca45f0163.jpg", 
+    "name": "BikashRobot", 
+    "description": "A Telegram Best Artificial Intelligence Chat Bot , written in Python with Pyrogram",
+    "logo": "https://te.legra.ph/file/f73af9a4ffe130a83d8d2.jpg",
+    "stack": "container",
     "env": {
         "BOT_TOKEN": {
-            "description": "telegram bot token here",
-            "required": true
-        },        
-        "MONGO_URL": {
-            "description": "mongo db url here",
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "telegram bot username here without @",
+            "description": "Input Bot token here",
             "required": true
         },
         "OWNER_USERNAME": {
-            "description": "Owner Username without @",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "Your Id Here! For Eg: 1439222689.",
-            "required": true,
-            "value": "1439222689"
-        },
-        "BOT_NAME": {
-            "description": "Simple Bot-name. Do not use Modified Text..",
-            "required": true
-        },
-        "UPDATE_CHNL": {
-            "description": "Your Updates Channel without @",
+            "description": "Input Owner Username here ( Without @)",
             "required": true
         },
         "SUPPORT_GRP": {
-            "description": "Your Support Group without @",
+            "description": "Input support group username here ( Without @)",
+            "required": true
+        },
+        "UPDATE_CHNL": {
+            "description": "Input updates channel username here ( Without @) ",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Input Bot USERNAME here ( Without @)",
+            "required": true
+        },  
+        "BOT_IMAGE": {
+            "description": "Input Bot start pic link here",
+            "required": true
+        },       
+        "MONGO_URL": {
+            "description": "Input mongo db url here",
             "required": true
         },
         "API_ID": {
-            "description": "telegram api id here",
+            "description": "Input api id here",
             "required": true
         },
         "API_HASH": {
-            "description": "telegram api hash here",
+            "description": "Input api hash here",
             "required": true
         }
     },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
     "addons": [
         {
             "plan": "heroku-postgresql"
