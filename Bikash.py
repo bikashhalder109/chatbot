@@ -1,4 +1,4 @@
-    ## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
+## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
 
 import requests
 import random
@@ -208,6 +208,8 @@ TOOLS_DATA_READ = f"""
 <u>** {BOT_NAME} 𝐀𝐥𝐥 𝐓𝐨𝐨𝐥𝐬 𝐇𝐞𝐫𝐞 ∇:**</u>
 ** 𝐔𝐬𝐞 : `/donate` 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 𝐎𝐰𝐧𝐞𝐑 𝐇𝐚𝐫𝐝 𝐖𝐨𝐫𝐤 🥀**
 **──────────────**
+** 𝐔𝐬𝐞 : `/repo` 𝐅𝐨𝐫 𝐑𝐞𝐩𝐨 🥀**
+**──────────────**
 ** 𝐔𝐬𝐞 `/ping` 𝐅𝐨𝐫 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐏𝐢𝐧𝐠 𝐎𝐟 {BOT_NAME}**
 **──────────────**
 [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
@@ -320,7 +322,6 @@ async def restart(client, m: Message):
         await asyncio.sleep(0.2)
         await accha.delete()
         await asyncio.sleep(2)
-        await umm.delete()
         await m.reply_photo(
             photo = random.choice(PHOTO),
             caption=f"""🥀 𝐇𝐞𝐲,  𝐈'𝐦 𝐀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌷.\n\n📌 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 [{BOT_NAME}](t.me/{BOT_USERNAME}) 🌷 𝐅𝐨𝐫𝐦 𝐈𝐧𝐝𝐢𝐚 🇮🇳 \n\n🌷 𝐈'𝐦 𝐀 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 🌷\n\n➡️ 𝐔𝐬𝐚𝐠𝐞 : /chatbot - [on|off] 𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐧𝐲 𝐆𝐫𝐨𝐮𝐩\n**──────────────**\n🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐇𝐞𝐥𝐩 💖!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GRP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHNL}) 🌷""",
@@ -425,10 +426,9 @@ async def repo(client, message):
        disable_web_page_preview=True,
     )
 
-@bot.on_message(filters.command("donate") & filters.private & ~filters.edited)
-async def donate_(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+@bot.on_message(filters.command("donate"))
+async def donate(client, message):
+    await message.reply_text(
         caption=f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 & 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐢𝐤𝐚𝐬𝐡 𝐨𝐫 𝐀𝐝𝐢𝐭𝐲𝐚 𝐅𝐨𝐫 𝐐𝐫 𝐂𝐨𝐝𝐞, 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 𝐎𝐫 𝐎𝐭𝐡𝐞𝐫𝐬 𝐋𝐢𝐧𝐤 𝐓𝐡𝐞𝐧 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BgtPromote) & 𝐂𝐥𝐢𝐜𝐤 𝐎𝐭𝐡𝐞𝐫𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 & 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐎𝐫 𝐆𝐫𝐨𝐮𝐩.. 🥀 [𝐘𝐨𝐮𝐭𝐮𝐛𝐞](https://youtube.com/@bikashgadgetstech)..""",
         reply_markup=InlineKeyboardMarkup(
             [
