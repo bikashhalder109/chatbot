@@ -315,7 +315,7 @@ DONATE_READ = f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭�
 
 ABOUT_READ = f"""
 ** [{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐈𝐬 𝐀𝐧 𝐀𝐢 𝐁𝐚𝐬𝐞𝐝 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐅𝐫𝐨𝐦 𝐈𝐧𝐝𝐢𝐚 𝐒𝐭𝐚𝐭𝐞 𝐖𝐞𝐬𝐭 𝐁𝐞𝐧𝐠𝐚𝐥**
-**──────────────**
+
 𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 ❗
 
 [𝐒𝐞𝐞 𝐇𝐨𝐰 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐀 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐋𝐢𝐤𝐞 𝐌𝐞](https://youtu.be/GwkCcRXM4d8)
@@ -451,7 +451,7 @@ async def repo(client, message):
 async def repo(client, message):
     await message.reply_text(
        text=DONATE_READ,
-       reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
+       reply_markup=InlineKeyboardMarkup(BIKASH_BUTN),
        disable_web_page_preview=True,
     )
         
