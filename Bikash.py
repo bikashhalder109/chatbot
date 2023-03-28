@@ -44,7 +44,7 @@ bot = Client(
 )
 
 mongo = MongoCli(MONGO_URL)
-db = mongo.Anonymous 
+db = mongo.Bgtowner
 chatsdb = db.chatsdb
 usersdb = db.users
 
@@ -396,11 +396,6 @@ async def cb_handler(Client, query: CallbackQuery):
             await query.message.edit(
                     text= TOOLS_DATA_READ,
                     reply_markup = InlineKeyboardMarkup(CHATBOT_BACK),
-     )
-     elif query.data== "DONATE_DATA":
-            await query.message.edit(
-                    text= DONATE_READ,
-                    reply_markup = InlineKeyboardMarkup(BIKASH_BUTN),
      )
     elif query.data == "BACK_HELP":
             await query.message.edit(
