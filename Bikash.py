@@ -285,7 +285,18 @@ HELP_BUTN = [
 
 BIKASH_BUTN = [
       [    
-           InlineKeyboardButton(text="🥀 𝐎𝐰𝐧𝐞𝐫 💖", url=f"https://t.me/{OWNER_USERNAME}"), 
+           InlineKeyboardButton(text="🥀 𝐁𝐢𝐤𝐚𝐬𝐡 💖", url=f"https://t.me/{OWNER_USERNAME}"), 
+           InlineKeyboardButton(text="💥 𝐑𝐞𝐩𝐨 💥️", callback_data="SOURCE"),
+      ],
+      [ 
+           InlineKeyboardButton(text="🥀 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🥀", url=f"https://t.me/{UPDATE_CHNL}"),  
+           InlineKeyboardButton(text="⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
+      ],
+]
+
+BIKASH_BTN = [
+      [    
+           InlineKeyboardButton(text="🥀 𝐁𝐢𝐤𝐚𝐬𝐡 💖", url=f"https://t.me/{OWNER_USERNAME}"), 
            InlineKeyboardButton(text="💥 𝐑𝐞𝐩𝐨 💥️", callback_data="SOURCE"),
       ],
       [ 
@@ -311,7 +322,7 @@ ABOUT_BTN = [
 
 SOURCE_READ = f"**🥀 𝐇𝐞𝐲, [{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐑𝐞𝐩𝐨 𝐈𝐬 𝐇𝐞𝐫𝐞 💖.**\n**𝐆𝐢𝐯𝐞𝐧 𝐒𝐭𝐚𝐫 & 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐑𝐞𝐩𝐨**\n**──────────────────**\n**[𝐑𝐞𝐩𝐨](https://github.com/BikashHalderNew/BikashChAtBot)**\n**──────────────────**\n𝐒𝐞𝐞 𝐎𝐮𝐫 𝐕𝐢𝐝𝐞𝐨 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 𝐇𝐨𝐰 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐎𝐰𝐧 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐅𝐨𝐫 𝐒𝐞𝐞 𝐕𝐢𝐝𝐞𝐨](https://youtu.be/GwkCcRXM4d8) \n**──────────────────**\n**𝐈𝐟 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐀𝐧𝐲 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧 & 𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐡𝐞𝐧 𝐉𝐨𝐢𝐧 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐏](https://t.me/{SUPPORT_GRP}).\n🥀 [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})"
 
-DONATE_READ = f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 & 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐢𝐤𝐚𝐬𝐡 𝐨𝐫 𝐀𝐝𝐢𝐭𝐲𝐚 𝐅𝐨𝐫 𝐐𝐫 𝐂𝐨𝐝𝐞, 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 𝐎𝐫 𝐎𝐭𝐡𝐞𝐫𝐬 𝐋𝐢𝐧𝐤 𝐓𝐡𝐞𝐧 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BgtPromote) & 𝐂𝐥𝐢𝐜𝐤 𝐎𝐭𝐡𝐞𝐫𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 & 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐎𝐫 𝐆𝐫𝐨𝐮𝐩.. 🥀 [𝐘𝐨𝐮𝐭𝐮𝐛𝐞](https://youtube.com/@bikashgadgetstech).."""
+DONATE_READ = f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 𝐨𝐫 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐢𝐤𝐚𝐬𝐡 𝐅𝐨𝐫 𝐐𝐫 𝐂𝐨𝐝𝐞, 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 𝐎𝐫 𝐎𝐭𝐡𝐞𝐫𝐬 𝐋𝐢𝐧𝐤 𝐓𝐡𝐞𝐧 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BgtPromote) & 𝐂𝐥𝐢𝐜𝐤 𝐎𝐭𝐡𝐞𝐫𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 & 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐎𝐫 𝐆𝐫𝐨𝐮𝐩.. 🥀 [𝐘𝐨𝐮𝐭𝐮𝐛𝐞](https://youtube.com/@bikashgadgetstech).."""
 
 ABOUT_READ = f"""
 ** [{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐈𝐬 𝐀𝐧 𝐀𝐢 𝐁𝐚𝐬𝐞𝐝 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐅𝐫𝐨𝐦 𝐈𝐧𝐝𝐢𝐚 𝐒𝐭𝐚𝐭𝐞 𝐖𝐞𝐬𝐭 𝐁𝐞𝐧𝐠𝐚𝐥**
@@ -378,7 +389,7 @@ async def cb_handler(Client, query: CallbackQuery):
     elif query.data == "DONATE":
             await query.message.edit(
                    text = DONATE_READ,
-                   reply_markup = InlineKeyboardMarkup(BIKASH_BUTN),
+                   reply_markup = InlineKeyboardMarkup(BIKASH_BTN),
                    disable_web_page_preview = True,
      )     
     elif query.data == "ABOUT":
@@ -449,7 +460,7 @@ async def repo(client, message):
 
 @bot.on_message(filters.command("donate"))
 async def repo(client, message):
-    await message.reply_text(
+    await message.reply_photo(
        text=DONATE_READ,
        reply_markup=InlineKeyboardMarkup(BIKASH_BUTN),
        disable_web_page_preview=True,
