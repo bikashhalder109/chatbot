@@ -460,7 +460,7 @@ async def repo(client, message):
 
 @bot.on_message(filters.command("donate"))
 async def repo(client, message):
-    await message.reply_photo(
+    await message.reply_text(
        text=DONATE_READ,
        reply_markup=InlineKeyboardMarkup(BIKASH_BUTN),
        disable_web_page_preview=True,
