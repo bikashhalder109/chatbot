@@ -1,4 +1,4 @@
-    ## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
+## 𝐁𝐢𝐤𝐚𝐬𝐡𝐡𝐚𝐥𝐝𝐞𝐫 & 𝐀𝐝𝐢𝐭𝐲𝐚𝐇𝐚𝐥𝐝𝐞𝐫
 
 import requests
 import random
@@ -107,7 +107,7 @@ EMOJIOS = [
       
 START = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━━
-💥 𝐇𝐢  𝐈'𝐦 𝐀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌷.\n\n📌 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 [{BOT_NAME}]({START_IMG1}) 🌷 𝐅𝐨𝐫𝐦 𝐈𝐧𝐝𝐢𝐚 🇮🇳 \n\n🌷 𝐈'𝐦 𝐀 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 🌷\n\n /chatbot - [on|off] 𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐧𝐲 𝐆𝐫𝐨𝐮𝐩
+💥 𝐇𝐢  𝐈'𝐦 𝐀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌷.\n\n📌 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 [{BOT_NAME}]({BOT_USERNAME}) 🌷 𝐅𝐨𝐫𝐦 𝐈𝐧𝐝𝐢𝐚 🇮🇳 \n\n🌷 𝐈'𝐦 𝐀 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 🌷\n\n /chatbot - [on|off] 𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐧𝐲 𝐆𝐫𝐨𝐮𝐩
 
 ┏━━━━━━━━━━━━━━━━━┓
 ┣❥︎ ♕︎ 𝐎𝐰𝐧𝐞𝐫 ♕︎ » [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/{OWNER_USERNAME})
@@ -153,17 +153,17 @@ PNG_BTN = [
      ],
 ]
 HELP_READ = f"""
-<u>**{BOT_NAME} 𝐀𝐥𝐥 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐂𝐦𝐝𝐬 🥀**</u>
+**{BOT_NAME} 𝐀𝐥𝐥 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐂𝐦𝐝𝐬 🥀**
 
-<u>**🥀 𝐔𝐬𝐞 𝐁𝐞𝐥𝐨𝐰 𝐂𝐦𝐝❗**</u>
+**🥀 𝐔𝐬𝐞 𝐁𝐞𝐥𝐨𝐰 𝐂𝐦𝐝❗**
 
 🥀 [𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/{UPDATE_CHNL}) & [𝐆𝐫𝐨𝐮𝐩](https://t.me/{SUPPORT_GRP}) 🥀
-**──────────────**
+
  [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
 """
 BACK = [
      [
-           InlineKeyboardButton(text="↖⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
+           InlineKeyboardButton(text="⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
      ],
 ]
 HELP_BTN = [
@@ -171,8 +171,10 @@ HELP_BTN = [
           InlineKeyboardButton(text="🤖 𝐁𝐨𝐭 🤖", callback_data="CHATBOT_CMD"),
           InlineKeyboardButton(text="🌻 𝐄𝐱𝐭𝐫𝐚 🌻", callback_data="TOOLS_DATA"),
      ],
+     [     InlineKeyboardButton(text="🤖 𝐃𝐨𝐧𝐚𝐭𝐞 🤖", callback_data="DONATE_DATA"),
+     ],
      [
-          InlineKeyboardButton(text="↖⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
+          InlineKeyboardButton(text="⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
           InlineKeyboardButton(text="❌ 𝐂𝐥𝐨𝐬𝐞 ❌", callback_data="CLOSE"),
      ],
 ]
@@ -205,13 +207,13 @@ PNG_BTN = [
 ]
 
 TOOLS_DATA_READ = f"""
-<u>** {BOT_NAME} 𝐀𝐥𝐥 𝐓𝐨𝐨𝐥𝐬 𝐇𝐞𝐫𝐞 ∇:**</u>
+** {BOT_NAME} 𝐀𝐥𝐥 𝐓𝐨𝐨𝐥𝐬 𝐇𝐞𝐫𝐞 ∇:**
 ** 𝐔𝐬𝐞 : `/donate` 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 𝐎𝐰𝐧𝐞𝐑 𝐇𝐚𝐫𝐝 𝐖𝐨𝐫𝐤 🥀**
-**──────────────**
+
 ** 𝐔𝐬𝐞 : `/repo` 𝐅𝐨𝐫 𝐑𝐞𝐩𝐨 🥀**
-**──────────────**
+
 ** 𝐔𝐬𝐞 `/ping` 𝐅𝐨𝐫 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐏𝐢𝐧𝐠 𝐎𝐟 {BOT_NAME}**
-**──────────────**
+
 [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
 """
 
@@ -256,9 +258,9 @@ async def add_served_chat(chat_id: int):
     return await chatsdb.insert_one({"chat_id": chat_id})
 
 CHATBOT_READ = f"""
-<u>**{BOT_NAME} 𝐂𝐦𝐝𝐬**</u>
+**{BOT_NAME} 𝐂𝐦𝐝𝐬**
 ** 𝐔𝐬𝐞 `/chatbot` 𝐓𝐨 enable/disable ❗ 𝐓𝐡𝐢𝐬 𝐂𝐦𝐝 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩 𝐒𝐨 𝐃𝐨𝐧'𝐭 𝐔𝐬𝐞 𝐎𝐧 𝐏𝐦 ❌.**
-**───────────────**
+
 [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})
 """
 CHATBOT_BACK = [
@@ -281,6 +283,17 @@ HELP_BUTN = [
      ],
 ]
 
+BIKASH_BUTN = [
+      [    
+           InlineKeyboardButton(text="🥀 𝐎𝐰𝐧𝐞𝐫 💖", url=f"https://t.me/{OWNER_USERNAME}"), 
+           InlineKeyboardButton(text="💥 𝐑𝐞𝐩𝐨 💥️", callback_data="SOURCE"),
+      ],
+      [ 
+           InlineKeyboardButton(text="🥀 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🥀", url=f"https://t.me/{UPDATE_CHNL}"),  
+           InlineKeyboardButton(text="⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
+      ],
+]
+          
 ABOUT_BTN = [
       [
            InlineKeyboardButton(text="🥀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🥀", url=f"https://t.me/{SUPPORT_GRP}"),  
@@ -295,7 +308,10 @@ ABOUT_BTN = [
            InlineKeyboardButton(text="⬅️ 𝐁𝐚𝐜𝐤 ⬅️", callback_data="BACK"),
       ],
 ]
+
 SOURCE_READ = f"**🥀 𝐇𝐞𝐲, [{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐑𝐞𝐩𝐨 𝐈𝐬 𝐇𝐞𝐫𝐞 💖.**\n**𝐆𝐢𝐯𝐞𝐧 𝐒𝐭𝐚𝐫 & 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐑𝐞𝐩𝐨**\n**──────────────────**\n**[𝐑𝐞𝐩𝐨](https://github.com/BikashHalderNew/BikashChAtBot)**\n**──────────────────**\n𝐒𝐞𝐞 𝐎𝐮𝐫 𝐕𝐢𝐝𝐞𝐨 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 𝐇𝐨𝐰 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐎𝐰𝐧 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐅𝐨𝐫 𝐒𝐞𝐞 𝐕𝐢𝐝𝐞𝐨](https://youtu.be/GwkCcRXM4d8) \n**──────────────────**\n**𝐈𝐟 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐀𝐧𝐲 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧 & 𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐡𝐞𝐧 𝐉𝐨𝐢𝐧 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐏](https://t.me/{SUPPORT_GRP}).\n🥀 [𝐎𝐰𝐧𝐞𝐫](https://t.me/{OWNER_USERNAME})"
+
+DONATE_READ = f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 & 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐢𝐤𝐚𝐬𝐡 𝐨𝐫 𝐀𝐝𝐢𝐭𝐲𝐚 𝐅𝐨𝐫 𝐐𝐫 𝐂𝐨𝐝𝐞, 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 𝐎𝐫 𝐎𝐭𝐡𝐞𝐫𝐬 𝐋𝐢𝐧𝐤 𝐓𝐡𝐞𝐧 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BgtPromote) & 𝐂𝐥𝐢𝐜𝐤 𝐎𝐭𝐡𝐞𝐫𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 & 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐎𝐫 𝐆𝐫𝐨𝐮𝐩.. 🥀 [𝐘𝐨𝐮𝐭𝐮𝐛𝐞](https://youtube.com/@bikashgadgetstech).."""
 
 ABOUT_READ = f"""
 ** [{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐈𝐬 𝐀𝐧 𝐀𝐢 𝐁𝐚𝐬𝐞𝐝 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐅𝐫𝐨𝐦 𝐈𝐧𝐝𝐢𝐚 𝐒𝐭𝐚𝐭𝐞 𝐖𝐞𝐬𝐭 𝐁𝐞𝐧𝐠𝐚𝐥**
@@ -358,8 +374,13 @@ async def cb_handler(Client, query: CallbackQuery):
                    text = SOURCE_READ,
                    reply_markup = InlineKeyboardMarkup(BACK),
                    disable_web_page_preview = True,
-
      )
+    elif query.data == "DONATE":
+            await query.message.edit(
+                   text = DONATE_READ,
+                   reply_markup = InlineKeyboardMarkup(BIKASH_BUTN),
+                   disable_web_page_preview = True,
+     )     
     elif query.data == "ABOUT":
             await query.message.edit(
                     text = ABOUT_READ,
@@ -375,6 +396,11 @@ async def cb_handler(Client, query: CallbackQuery):
             await query.message.edit(
                     text= TOOLS_DATA_READ,
                     reply_markup = InlineKeyboardMarkup(CHATBOT_BACK),
+     )
+     elif query.data== "DONATE_DATA":
+            await query.message.edit(
+                    text= DONATE_READ,
+                    reply_markup = InlineKeyboardMarkup(BIKASH_BUTN),
      )
     elif query.data == "BACK_HELP":
             await query.message.edit(
@@ -427,31 +453,13 @@ async def repo(client, message):
     )
 
 @bot.on_message(filters.command("donate"))
-async def donate(client, message):
+async def repo(client, message):
     await message.reply_text(
-        caption=f"""🥀 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐅𝐨𝐫 𝐃𝐨𝐧𝐚𝐭𝐞 & 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐢𝐤𝐚𝐬𝐡 𝐨𝐫 𝐀𝐝𝐢𝐭𝐲𝐚 𝐅𝐨𝐫 𝐐𝐫 𝐂𝐨𝐝𝐞, 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 𝐎𝐫 𝐎𝐭𝐡𝐞𝐫𝐬 𝐋𝐢𝐧𝐤 𝐓𝐡𝐞𝐧 [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BgtPromote) & 𝐂𝐥𝐢𝐜𝐤 𝐎𝐭𝐡𝐞𝐫𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 & 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐎𝐫 𝐆𝐫𝐨𝐮𝐩.. 🥀 [𝐘𝐨𝐮𝐭𝐮𝐛𝐞](https://youtube.com/@bikashgadgetstech)..""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🥀 𝐁𝐢𝐤𝐚𝐬𝐡 🥀", url=f"https://t.me/BikashHalder")
-            ],          
-            [
-                    InlineKeyboardButton(
-                        "🥀 𝐀𝐝𝐢𝐭𝐲𝐚 🥀", url=f"https://t.me/AdityaHalder")
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🥀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🥀", url=f"https://t.me/Bgt_Chat"
-                    ),
-                    InlineKeyboardButton(
-                        "🥀 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🥀", url=f"https://t.me/BikashGadgetsTech")
-                ]
-            ]
-        ),
+       text=DONATE_READ,
+       reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
+       disable_web_page_preview=True,
     )
-       
-
+        
 @bot.on_message(filters.command(["help", f"help@{BOT_USERNAME}"], prefixes=["+", ".", "/", "-", "?", "$"]))
 async def restart(client, m: Message):
     if m.chat.type == "private":
@@ -491,7 +499,7 @@ async def ping(client, message: Message):
     ms = (datetime.now()-start).microseconds / 1000
     await message.reply_photo(
         photo=random.choice(PHOTO),
-        caption=f"🥀 𝐇𝐞𝐲, 𝐔𝐬𝐞𝐫\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞 🥀 𝐌𝐲 𝐏𝐢𝐧𝐠\n➥ `{ms}` ms\n\n<b>|| 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 [𝐁𝐢𝐤𝐚𝐬𝐡](https://t.me/{OWNER_USERNAME})||</b>",
+        caption=f"🥀 𝐇𝐞𝐲, 𝐔𝐬𝐞𝐫\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞 🥀 𝐌𝐲 𝐏𝐢𝐧𝐠\n➥ `{ms}` ms\n\n 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 [𝐁𝐢𝐤𝐚𝐬𝐡](https://t.me/{OWNER_USERNAME})",
         reply_markup=InlineKeyboardMarkup(PNG_BTN),
     )
 
