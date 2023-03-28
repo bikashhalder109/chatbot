@@ -44,7 +44,7 @@ bot = Client(
 )
 
 mongo = MongoCli(MONGO_URL)
-db = mongo.Bgtowner
+db = mongo.Anonymous 
 chatsdb = db.chatsdb
 usersdb = db.users
 
